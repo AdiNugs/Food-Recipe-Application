@@ -7,7 +7,7 @@
     android:background="@color/base"
     android:orientation="vertical"
     android:paddingTop="100dp"
-    tools:context=".MainActivity">
+    tools:context=".register">
 
     <ImageView
         android:layout_width="112dp"
@@ -29,7 +29,7 @@
         android:text="Email address" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etUsername"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
@@ -38,29 +38,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="30dp"
+        android:text="First name" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:text="Last name" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
         android:text="Password" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:text="Confirm password" />
+
+    <EditText
+        android:id="@+id/etPasswordConfirm"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Login"
-        />
+        android:text="Register" />
 
     <Button
-        android:id="@+id/btnLoginRegister"
-        android:layout_width="277dp"
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Don't have an account?" />
-
+        android:text="Back to login" />
 
 </LinearLayout>
