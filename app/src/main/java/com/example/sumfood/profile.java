@@ -7,22 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class register extends AppCompatActivity {
+public class profile extends AppCompatActivity {
 
-    Button btnBackToLogin;
+
+    Button btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_profile);
 
-        btnBackToLogin = findViewById(R.id.btnBackToLogin);
+        btnLogout = findViewById(R.id.btnLogout);
 
-        btnBackToLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(register.this, MainActivity.class);
+                Intent intent = new Intent(profile.this, MainActivity.class);
                 startActivity(intent);
 
             }

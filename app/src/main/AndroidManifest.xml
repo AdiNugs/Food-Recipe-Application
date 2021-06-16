@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SumFood">
-        <activity android:name=".register"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".profile"
+            android:label="Profile"></activity>
+        <activity
+            android:name=".home"
+            android:label="Home" />
+        <activity
+            android:name=".register"
+            android:theme="@style/Theme.SumFood.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.SumFood.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

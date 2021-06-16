@@ -30,7 +30,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, register.class);
                 startActivity(intent);
-                
+
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, home.class);
+                startActivity(intent);
+
             }
         });
 
